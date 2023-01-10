@@ -1,0 +1,24 @@
+extends layout 
+
+block content 
+    h2 Enter author's name and include a message 
+    form(
+        method='POST'
+        action='/new'
+    )
+        input(
+            type='text'
+            name='authorName'
+            value='Author Name'
+        )
+        input(
+            type='text'
+            name='message'
+            value='Type message here'
+        )
+        input(
+            type='submit'
+            class='btn'
+            value='Submit'
+            name='btnSubmit'
+        )= 'post'
